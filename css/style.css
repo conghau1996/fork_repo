@@ -1,0 +1,255 @@
+@charset "utf-8";
+
+@font-face{
+	font-family: ThuPhap;
+	src: url(../Font/TMC-Ong Do.TTF);
+}
+.clearfix{
+	overflow: hidden;
+}
+body {
+	font-family:Tahoma, Geneva, sans-serif;
+}
+
+h1 {
+	font-family: ThuPhap;
+}
+
+header{
+	background-color: #143544;
+}
+
+nav {
+	background-color: #cccccc;
+}
+
+nav > ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+nav > ul > li {
+	float: left;
+	padding: 4px 20px;
+}
+
+nav ul  li  a {
+	text-decoration: none;
+	color: #000000;
+	padding: 9px 20px;
+	display: block;
+	font-weight: bold;
+}
+
+nav ul li:first-child a{
+	background-color: #80A1A9;
+
+}
+
+nav ul li a:hover {
+	background-color: #143544;
+	color: #FFF;
+}
+
+ul.subcontent {
+	list-style-type: none;
+	display: none;
+}
+
+nav ul li:hover ul.subcontent{
+	display: block;
+	position: absolute;
+	background-color: #CCC;
+	
+}
+
+section.section1 {
+	text-align: center;
+}
+
+section.section1 > h1 {
+	text-shadow: 10px 5px yellow
+}
+
+section.section1 div.items {
+
+}
+
+section.section1 h1 {
+	position: relative;
+	top: 15px
+}
+
+section.section1 div.item {
+	width: 21%;
+	margin: 2%;
+	float: left;
+	outline: 1px solid #cccccc;
+	background-color: #cccccc;
+	box-shadow: 5px 10px 15px red;
+	/*phải dưới nhòe*/
+}
+
+section.section1 div.item > img {
+	width: 100%;
+	/*Ảnh chuyển động 2s*/
+	transition: transform 4s;
+	/*Khi rê vào ảnh chuột biến thành bàn tay*/
+	cursor: pointer;
+}
+
+/*Hiệu ứng khi rê chuột vào ảnh*/
+
+section.section1 div.item > img:hover {
+	transform: scale(0.4);
+}
+
+section.section1 div.item > h3 {
+	position: relative;
+	top: 10px;
+}
+
+section.section1 div.controls {
+	padding: 15px;
+}
+
+section.section1 div.controls input {
+	padding: 5px 10px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+section.section1 div.controls > input {
+	border: 1px solid #cccccc;
+}
+
+section.section1 div.controls > input:first-child{
+	background-color: #39726F;
+}
+section.section1 div.controls > input:first-child:hover{
+	background-color: #45A87F;
+}
+
+section.section1 div.controls > input:last-child{
+	background-color: #0B8825;
+}
+section.section1 div.controls > input:last-child:hover{
+	background-color: #0DEF12;
+}
+
+/*Session 2*/
+section.section2 {
+	width: 80%;
+	margin: 0 auto;
+}
+section.section2 > div.left {
+	width: 30%;
+	float: left;
+}
+
+section.section2 > div.right {
+	width: 70%;
+	float: left;
+}
+section.section2 > div.left > img {
+	width: 100%;
+}
+
+div.thumb > img {
+	width: 24%;
+}
+
+.red {
+	color: red;
+}
+
+section.section2 > div.right > img {
+	border-bottom: 1px solid gray;
+}
+
+div.right > h1, div.right > h3 {
+	margin-left:100px;
+}
+
+/*section3*/
+section.section3 {
+	background-color: #333;
+	color: white;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+section.section3 > p {
+	font-style: italic;
+}
+
+section.section3  table {
+	width: 100%;
+
+
+}
+
+section.section3  table > tr {
+
+}
+section.section3  table > tr > td {
+	
+}
+
+input[type=text]{
+	width: 98%;
+	padding: 10px 1%;
+	border: 1px solid;
+	border-radius: 5px;
+}
+
+section.section3  table  tr  td textarea {
+	width: 100%;
+	height: 130px;
+	border-radius: 5px;
+}
+
+section.section3 input[type=button]{
+	padding: 5px 10px;
+	background-color: #33D16B;
+	color: white;
+	border: 1px solid #33D16B;
+}
+
+section.section3 input[type=button]:hover{
+	background-color: #93D16B;
+	border: 1px solid #93D16B;
+	color: black;
+}
+
+section.section4 {
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+
+}
+
+section.section4 div.people {
+	width: 33.33%;
+	float: left;
+}
+
+section.section4 div.people img {
+	width: 70%;
+	border-radius: 50%;
+}
+
+
+footer {
+	background-color: #143544;
+	padding: 10px;
+	font-weight: bold;
+}
